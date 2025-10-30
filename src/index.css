@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* The Everleaf Archive Design System */
+    /* Warm, organic, sophisticated palette */
+    
+    --background: 20 33% 19%; /* Deep chocolate brown */
+    --foreground: 35 45% 93%; /* Creamy off-white */
+
+    --card: 35 45% 93%; /* Paper-like cream */
+    --card-foreground: 20 33% 19%;
+
+    --popover: 35 45% 93%;
+    --popover-foreground: 20 33% 19%;
+
+    --primary: 43 78% 44%; /* Caramel gold */
+    --primary-foreground: 35 45% 93%;
+
+    --secondary: 20 20% 56%; /* Milk-tea beige */
+    --secondary-foreground: 20 33% 19%;
+
+    --muted: 20 20% 56%;
+    --muted-foreground: 20 33% 25%;
+
+    --accent: 43 78% 44%; /* Caramel gold for highlights */
+    --accent-foreground: 35 45% 93%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 35 45% 93%;
+
+    --border: 20 20% 56%;
+    --input: 35 45% 93%;
+    --ring: 43 78% 44%;
+
+    --radius: 0.75rem;
+
+    /* Custom design tokens */
+    --garden-soil: 20 33% 19%;
+    --paper-cream: 35 45% 93%;
+    --warm-gold: 43 78% 44%;
+    --soft-beige: 20 20% 56%;
+    
+    /* Transitions */
+    --transition-organic: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 20 33% 19%;
+    --foreground: 35 45% 93%;
+    --card: 35 45% 93%;
+    --card-foreground: 20 33% 19%;
+    --popover: 35 45% 93%;
+    --popover-foreground: 20 33% 19%;
+    --primary: 43 78% 44%;
+    --primary-foreground: 35 45% 93%;
+    --secondary: 20 20% 56%;
+    --secondary-foreground: 20 33% 19%;
+    --muted: 20 20% 56%;
+    --muted-foreground: 20 33% 25%;
+    --accent: 43 78% 44%;
+    --accent-foreground: 35 45% 93%;
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 35 45% 93%;
+    --border: 20 20% 56%;
+    --input: 35 45% 93%;
+    --ring: 43 78% 44%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+}
+
+@layer utilities {
+  .plant-sway {
+    animation: sway 4s ease-in-out infinite;
+  }
+
+  .plant-grow {
+    animation: grow 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  .root-grow {
+    animation: rootGrow 2s ease-out forwards;
+  }
+
+  @keyframes sway {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(2deg); }
+    75% { transform: rotate(-2deg); }
+  }
+
+  @keyframes grow {
+    from {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  @keyframes rootGrow {
+    from {
+      stroke-dashoffset: 1000;
+      opacity: 0;
+    }
+    to {
+      stroke-dashoffset: 0;
+      opacity: 0.3;
+    }
+  }
+}
