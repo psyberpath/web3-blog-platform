@@ -8,24 +8,77 @@ const Article = () => {
 
   // Mock article data - in a real app, this would come from a database
   const article = {
-    title: "The Art of Digital Cultivation",
-    content: `In the vast expanse of the digital landscape, we find ourselves tending to gardens of thought, nurturing seeds of ideas that bloom into forests of understanding.
-
-The practice of maintaining a digital garden is both ancient and modern. Like the monks who tended their monastery gardens, we cultivate our thoughts with patience and care. Each article is a living plant, growing and evolving with each reader who encounters it.
-
-Consider the nature of growth itself. A seed planted in rich soil doesn't simply appear as a full-grown tree. It pushes through darkness, breaks through the surface, reaches toward the light. Our ideas follow similar patterns. They begin as whispers, fragments of thoughts scattered across our consciousness.
-
-In traditional publishing, an article is finished the moment it's released. But in a digital garden, content is perpetually in season. It grows, branches, and sometimes even bears unexpected fruit. Readers become gardeners themselves, their engagement providing the water and sunlight needed for ideas to flourish.
-
-The metaphor extends beyond mere aesthetics. Just as a garden requires different plants to thrive—some in shade, others in sun—our digital spaces need diversity. Technical articles sit alongside personal reflections. How-to guides grow next to philosophical musings. Each contributes to the ecosystem.
-
-This approach to content creation stands in contrast to the stream-based feeds that dominate social media. Instead of thoughts flowing past like water, never to be seen again, a digital garden creates spaces where ideas can take root. Time moves differently here. There's no pressure for daily content, no algorithm demanding constant feeding.
-
-What emerges is something more organic, more human. A digital garden reflects its gardener. It shows not just what they know, but how they think, how they connect ideas, how they've grown over time. The dead ends and the flourishing paths all tell a story.
-
-As you read this, you're participating in the garden's growth. Your attention is sunlight. Your reflection is water. And perhaps, inspired by what you find here, you'll plant seeds of your own.`,
-    author: "The Gardener",
-    date: "March 15, 2024",
+    title: "The Next Layer of Trust: On-Chain Reputation with Intuition",
+    content: `In the fast-evolving landscape of Web3, one of the most fundamental problems remains unsolved: trust.
+    Not the kind that’s hardcoded into smart contracts, but the softer, human kind who should you believe, follow, or transact with in a pseudonymous world?
+    For all the progress decentralized systems have made, identity and reputation remain fragmented. Each wallet is just a string of characters; every transaction, an isolated event. We have trillions in on-chain data but almost zero context.
+    This is where Intuition enters the picture a protocol built to make context machine-readable and trust composable.
+     
+    1. The Problem: Web3 Has Data, But No Memory
+    Blockchains are great at storing immutable facts transfers, swaps, mints but terrible at representing meaning.
+    Who is trustworthy? Which projects have real communities? What relationships exist between addresses, protocols, and outcomes?
+    Right now, this context exists off-chain: in Discords, X threads, Telegram chats, and gut instincts.
+    The result? Every new user, investor, or developer starts from scratch blind to the invisible reputation network that actually powers Web3.
+    We have DAOs without reputation systems, protocols without verifiable history, and “influencers” without transparency. Trust is rebuilt, broken, and rebuilt again, manually.
+     
+    2. The Solution: Intuition’s Knowledge Graph of Trust
+    Intuition solves this by creating a universal, on-chain knowledge graph a way to represent, verify, and compose human knowledge and social trust directly on-chain.
+    At its core, Intuition lets users and protocols create Claims verifiable statements about any entity (a person, wallet, protocol, or idea).
+    Each claim can be supported or challenged by others, forming a web of interlinked beliefs a “trust fabric” that can be queried, visualized, and used to make informed decisions.
+    Think of it as:
+    If the blockchain is a database of transactions, Intuition is a database of trust.
+    Every claim lives on-chain, backed by cryptographic signatures and social proofs.
+    This creates a context layer for the decentralized world transforming anonymous data into a living network of meaning.
+     
+    3. The Architecture: How It Works
+    Under the hood, Intuition’s system rests on three pillars:
+    • Claims structured assertions made by users or agents, like “@alice.eth contributed to Optimism RetroPGF” or “Wallet 0xA1B is part of a verified DAO.”
+    • Entities anything that can be the subject or object of a claim: people, protocols, projects, or concepts.
+    • Relations the connective tissue that allows multiple claims to form a graph.
+    All this is built with graph-based data architecture, enabling semantic linking and contextual reasoning between nodes.
+    What makes Intuition different from legacy reputation systems is that it’s open, composable, and non-binary.
+    Reputation isn’t a static score it’s a contextual narrative built from collective knowledge.
+    Through this, Intuition enables AI agents, protocols, and users to consume verified social context as easily as they read token balances today.
+     
+    4. The Use Case: On-Chain Reputation
+    The most powerful use case of Intuition is on-chain reputation a long-sought foundation for credible Web3 identity.
+    Reputation today is scattered: followers on X, badges in Discord, POAPs from events, and tokens in wallets.
+    Intuition brings them together into a verifiable, interoperable reputation layer.
+    Imagine:
+    • DeFi protocols granting higher limits or better terms to wallets with verified trust graphs.
+    • DAOs voting based on contribution reputation rather than wallet size.
+    • NFT creators validating real community members before drops.
+    • AI agents making decisions based on trust-weighted claims instead of random heuristics.
+    By mapping who trusts whom and why, Intuition transforms fragmented reputation into a dynamic, queryable asset a new primitive for human credibility in digital economies.
+     
+    5. The Token and Economic Design
+    At the center of Intuition’s system lies the $TRUST token, which governs claim creation, validation, and curation.
+    It introduces economic alignment into the trust graph: users stake $TRUST to assert claims, signal belief, or challenge misinformation.
+    This mechanism ensures that the network’s information remains self-regulating false or low-quality claims carry economic risk, while high-quality insights accrue value and reputation over time.
+    The outcome is a trust market, where good information becomes a scarce and valuable resource an internet where context, not just content, has capital.
+     
+    6. Why It Matters
+    Web3 was built to decentralize power, but it cannot decentralize trust unless reputation becomes portable, composable, and verifiable.
+    Intuition’s design offers this missing layer.
+    It doesn’t replace human judgment it amplifies it.
+    It gives structure to the social intuition that has always guided crypto: who to believe, who to back, and who to build with.
+    By turning trust into data, Intuition makes reputation not just observable, but actionable the cornerstone of coordination in a truly decentralized internet.
+     
+    7. The Vision Ahead
+    In time, Intuition could become the trust protocol of Web3 a universal reputation infrastructure connecting DeFi, DAOs, social platforms, and AI systems.
+    Just as oracles brought external data on-chain, Intuition brings social truth on-chain.
+    It enables networks to reason, not just compute; to understand, not just execute.
+    This is the foundation for a new generation of intelligent, human-aligned crypto systems where every address carries not just history, but meaning.
+     
+    Conclusion
+    The future of crypto isn’t just financial it’s relational.
+    To scale trust, we must map it.
+    And Intuition is building the first protocol capable of doing that encoding human reputation into the blockchain itself, one verifiable claim at a time.
+    It’s not just an innovation.
+    It’s a memory layer for the decentralized world.
+     `,
+    author: "Heyjerey",
+    date: "October 29, 2025",
     readTime: "5 min read",
   };
 
